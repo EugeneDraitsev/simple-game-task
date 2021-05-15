@@ -21,9 +21,9 @@ export const useControls = () => {
   const moveLeft = () => movePlayer(0, -1)
   const moveRight = () => movePlayer(0, 1)
 
-  useKey((event) => ['w', 'ArrowUp'].includes(event.key), moveUp)
-  useKey((event) => ['s', 'ArrowDown'].includes(event.key), moveDown)
+  useKey((event) => ['KeyW', 'ArrowUp'].includes(event.code), moveUp)
+  useKey((event) => ['KeyS', 'ArrowDown'].includes(event.code), moveDown)
 
-  useKey((event) => ['a', 'ArrowLeft'].includes(event.key), moveLeft)
-  useKey((event) => ['d', 'ArrowRight'].includes(event.key), moveRight)
+  useKey((event) => ['KeyA', 'ArrowLeft'].includes(event.code), moveLeft)
+  useKey((event) => ['KeyD', 'ArrowRight'].includes(event.code), moveRight)
 }
