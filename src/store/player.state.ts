@@ -61,8 +61,6 @@ export const playerSelector = selector<PlayerObject>({
     if (isNextEnemy) {
       set(playerState, (currentPlayer) => ({
         ...currentPlayer,
-        row: nextRow,
-        column: nextColumn,
         isAlive: false,
       }))
     }
@@ -92,8 +90,6 @@ export const playerSelector = selector<PlayerObject>({
           ) {
             set(playerState, (currentPlayer) => ({
               ...currentPlayer,
-              row: nextRow,
-              column: nextColumn,
               isAlive: false,
             }))
           }

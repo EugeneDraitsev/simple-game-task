@@ -1,7 +1,7 @@
-name: Pull Request Checks
+name: Latest Commit Check
 
 on:
-  pull_request:
+  push:
     branches:
       - master
 

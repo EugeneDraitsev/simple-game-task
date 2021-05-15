@@ -1,6 +1,6 @@
 {
-  "extends": ["airbnb", "react-app", "prettier"],
-  "plugins": ["@typescript-eslint"],
+  "extends": ["airbnb", "react-app", "prettier", "plugin:sonarjs/recommended"],
+  "plugins": ["@typescript-eslint", "sonarjs"],
   "settings": {
     "import/resolver": {"node": {"extensions": [".js", ".jsx", ".ts", ".tsx", ".json"]}}
   },
