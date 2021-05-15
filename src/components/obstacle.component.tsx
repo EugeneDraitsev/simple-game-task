@@ -1,7 +1,7 @@
-import React, { memo, useMemo } from 'react'
+import React, { memo } from 'react'
 import styled from '@emotion/styled'
 
-import { EnemyObject, ObstacleObject } from '../store'
+import { ObstacleObject } from '../store'
 import { getTexture } from '../textures'
 
 const Rock = styled.div<{ texture: string }>`

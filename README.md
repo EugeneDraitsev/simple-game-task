@@ -11,10 +11,14 @@ The goal is to collect all bonuses and don't be eaten by monsters
 
 ## Solution
 
-The solution is based on react vite app with recoiljs as state manager. To run it locally use following commands:
+The solution is based on react vite app with [recoiljs](https://recoiljs.org/) as state manager. To run it locally use following commands:
 
 ```shell
 yarn
 yarn dev
 ```
+
+Also, you can check demo here: [https://simple-game-task.netlify.app](https://simple-game-task.netlify.app)
+
+![screenshot.png](.github/screenshot.png)
 

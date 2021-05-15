@@ -1,21 +1,17 @@
+/* eslint-disable react/no-array-index-key */
 import React, { memo } from 'react'
 import styled from '@emotion/styled'
+import { isEmpty } from 'lodash-es'
 import { useRecoilValue } from 'recoil'
 
-import {
-  bonusesState,
-  playerState,
-  WORLD_HEIGHT,
-  WORLD_WIDTH,
-  worldState,
-} from '../store'
+import { bonusesState, playerState, worldState } from '../store'
 import { Tile } from './tile.component'
 import { Obstacle } from './obstacle.component'
 import { Enemy } from './enemy.component'
 import { Player } from './player.component'
 import { useControls, useResetGame } from '../hooks'
 import { Bonus } from './bonus.component'
-import { isEmpty } from 'lodash-es'
+import { WORLD_HEIGHT, WORLD_WIDTH } from '../constants'
 
 const Content = styled.main`
   display: flex;

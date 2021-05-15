@@ -1,4 +1,4 @@
-import React, { memo, useMemo } from 'react'
+import React, { memo } from 'react'
 import styled from '@emotion/styled'
 
 import { EnemyObject } from '../store'
