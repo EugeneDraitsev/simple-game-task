@@ -1,6 +1,6 @@
-## Game test assignment
+## GameComponent test assignment
 
-Create a class hierarchy and implement key methods for a computer game (no functional requirements yet). Game's plot:
+Create a class hierarchy and implement key methods for a computer game. GameComponent's plot:
 
 
 A player can move within a rectangular field with size Width * Height

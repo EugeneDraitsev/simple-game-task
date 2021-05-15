@@ -2,13 +2,13 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { RecoilRoot } from 'recoil'
 
-import Game from './Game'
+import { Game } from './components'
 import GlobalStyles from './styles/global.styles'
 
 ReactDOM.render(
   <React.StrictMode>
-    <GlobalStyles />
     <RecoilRoot>
+      <GlobalStyles />
       <Game />
     </RecoilRoot>
   </React.StrictMode>,

@@ -1,0 +1,5 @@
+export * from './game.component'
+export * from './tile.component'
+export * from './obstacle.component'
+export * from './player.component'
+export * from './bonus.component'
