@@ -1,5 +1,5 @@
 import { atom, selector } from 'recoil'
-import { minBy } from 'lodash-es'
+import { minBy, shuffle } from 'lodash-es'
 
 import { PlayerObject } from './world.state.types'
 import { isMovementAvailable } from './world.ulils'
@@ -78,7 +78,7 @@ export const playerSelector = selector<PlayerObject>({
         )
 
         const nextPosition = minBy(
-          possibleMoves,
+          shuffle(possibleMoves),
           (move) =>
             Math.abs(nextRow - move.row) + Math.abs(nextColumn - move.column)
         )
